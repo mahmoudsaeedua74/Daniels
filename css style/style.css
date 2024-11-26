@@ -1,0 +1,372 @@
+/* share property */
+:root {
+    --main_padding:6.25rem;
+    --main_colorBack:#f7f7f7
+}
+.main_Padding{
+    padding-block: var(--main_padding);
+}
+.main_colorBack{
+    background-color: var(--main_colorBack);
+}
+body{
+    font-family: "Poppins", sans-serif;
+    }
+h1, h2, h3, h4, h5, h6, .logo {
+        font-family: "Montserrat", sans-serif;    
+}
+
+ /* start of navbar- */
+.nav-link {
+    color: #111;
+    padding-inline:0 !important;
+    position: relative;
+}
+.navbar-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #111;
+    bottom: 0%;
+    left: 0;
+    transition: all .5s;
+    width: 0%;
+}
+.navbar-nav .nav-link.active:hover:after{
+    width: 90%;
+}
+
+/* end of navbar */
+
+/* start of header */
+header.home {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.65) , rgba(0, 0, 0, 0.65)) , url(../image/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+   
+}
+.icon {
+    border: none !important;
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.hero img{
+    width: 100%;
+    padding: 0px 0px 25px 25px;
+    position: relative;
+}
+.hero::after{
+    content: "";
+    background-image: url(../image/dots.png);
+    background-repeat: repeat;
+    /* background-color: red; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 70%;
+    z-index: -1;
+}
+header.home h5{
+    font-size: 3.12rem;
+}
+header.home h1 {
+    font-size: 2.75rem; 
+    text-align: center;
+}
+header.home h1::after{
+    content: "";
+    position: absolute;
+    animation: typing 8s infinite;
+    -webkit-animation: typing 8s infinite alternate  both linear;
+    left: 50%;
+    transform: translatex(-50%);
+}
+     @keyframes typing
+ {
+        0% { content: "I Am |"; }
+        2% { content: "I Am L|"; }
+        4% { content: "I Am La|"; }
+        6% { content: " I Am Lar|"; }
+        8% { content: " I Am Larr|"; }
+        10% { content: "I Am Larry|"; }
+        12% { content: "I Am Larry "; }
+        14% { content: "I Am Larry D|"; }
+        16% { content: "I Am Larry Da|"; }
+        18% { content: "I Am Larry Dan|"; }
+        20% { content: "I Am Larry Dani|"; }
+        22% { content: "I Am Larry Danie|"; }
+        24% { content: "I Am Larry Daniels|"; }
+        26% { content: "I Am Larry Daniels|"; }
+        28% { content: "I Am Larry Daniel|"; }
+        30% { content: "I Am Larry Dani|"; }
+        32% { content: "I Am Larry Dan|"; }
+        34% { content: "I Am Larry Da|"; }
+        36% { content: "I Am Larry D|"; }
+        38% { content: "I Am Larry |"; }
+        40% { content: "I Am Larry|"; }
+        42% { content: "I Am Lar|"; }
+        44% { content: "I Am La|"; }
+        46% { content: "I Am L|"; }
+        48% { content: "I Am |"; }
+        50% { content: "I Am |"; }
+        52% { content: "I Am D|"; }
+        54% { content: "I Am De|"; }
+        56% { content: "I Am Dev|"; }
+        58% { content: "I Am Deve|"; }
+        60% { content: "I Am Devel|"; }
+        62% { content: "I Am Develop|"; }
+        64% { content: "I Am Developer|"; }
+        66% { content: "I Am Developer|"; }
+        68% { content: "I Am Develope|"; }
+        70% { content: "I Am Develop|"; }
+        72% { content: "I Am Develo|"; }
+        74% { content: "I Am Devel|"; }
+        76% { content: "I Am Deve|"; }
+        78% { content: "I Am Dev|"; }
+        80% { content: "I Am De|"; }
+        82% { content: "I Am D|"; }
+        84% { content: "I Am|"; }
+        86% { content: "I Am|"; }
+        88% { content: "I Am d|"; }
+        90% { content: "I Am de|"; }
+        92% { content: "I Am des|"; }
+        94% { content: "I Am desi|"; }
+        96% { content: "I Am desig|"; }
+        98% { content: "I Am design|"; }
+        100% { content: "I Am designer|"; }
+        102% { content: "I Am designer|"; }
+        104% { content: "I Am design|"; }
+        106% { content: "I Am desi|"; }
+        108% { content: "I Am des|"; }
+        110% { content: "I Am de|"; }
+        112% { content: "I Am d|"; }
+        114% { content: "I Am|"; }
+        116% { content: "I Am|"; }
+
+} 
+/* end of header */
+/* start of about section */
+
+section.about div.content >:nth-child(2){
+        letter-spacing: 2px;
+        color: #999;
+        font-size: 14px;
+}
+section.about div.content >:nth-child(3){
+        color: #748182;
+}
+div.progres > .progress {
+    box-shadow: 0 0 .4rem inset rgba(0, 0, 0, 0.15 );
+ } 
+ div.bout :nth-child(1){
+    background-color: #1c1c1c;
+    color: #eee;
+}
+div.bout :nth-child(1):hover{
+    background-color: #fff;
+     color: #212529;
+}
+div.bout :nth-child(2):hover{
+    background: #1c1c1c ;
+    color: #eee;
+}
+/* end of about section */
+
+/* start of Services section */
+ h3{
+    isolation: isolate;
+    font-size: 2.5rem !important ;
+    font-weight: 900;
+}
+ h3::after
+{
+    content: "";
+    background-image: url(../image/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    width: 18%;
+    height: 30px;
+    bottom: 0;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+p{
+    word-spacing: 2px;
+    font-size: .875rem;
+    color: #748182;
+    line-height: 1.6;
+}
+ div.icon{
+    height: 4.375rem;
+    width: 4.375rem;
+    margin-inline: auto;
+    transition: all .5s;
+    background-color: #f4f4f4;
+}
+div.contetn:hover div.icon {
+        background-color: #111 !important;
+        color: #fff;
+}
+/* end of Services section */
+
+/* start of Portfolio section */
+div.overlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+}
+div.content:hover .overlayer {
+opacity: 1;
+transform: translateY(0px);
+}
+.content_of_overlayer>p{
+    transform: translateY(-10px );
+    transition: all .5s;
+}
+div.content:hover .content_of_overlayer>p {
+    transform: translateY(10px );
+}
+div.content_of_overlayer>div .icon {
+    background-color: black;
+}
+div.content_of_overlayer>div .icon:hover {
+    border: solid black 1px !important ;
+    background-color: white ;
+    color: black !important;  
+}
+.nav-tabs .nav-link::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #111;
+    bottom: 0%;
+    left: 0;
+    transition: all .5s;
+    width: 0%;
+}
+.nav-tabs .nav-link:focus::after {
+    width: 100%;
+}
+.nav-link:hover {
+    color: #111 !important;
+}
+/* end of Portfolio section */
+/* start of Testimonials section */
+.photo_Testimonials{
+    width: 6.25rem;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    text-indent: 0;
+    background-color: #869791 !important;
+    margin-top: 20px;
+}
+section.Testimonials div span {
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+}
+section.Testimonials div h6 {
+    color: #343434;
+    font-weight: 600;
+
+}
+/* end of Testimonials section */
+/* start of resualt section */
+section.resualt div.content h3{
+    font-size: 1.8rem !important;
+}
+/* end of resualt section */
+
+/*  start of team section   */
+section img {
+    transition: all 0.4s ease 0s;
+}
+.content>div:hover img {
+    transform: scale(1.2);
+ }
+.layer {
+  background-color: rgb(255, 255, 255 , .9);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition:  all 0.5s ease 0s;
+    opacity: 0;
+   transform: scale(0.5, 0.5);
+}
+.content:hover .layer{
+opacity: 1;
+transform:rotateY(180deg) scale(1);
+}
+.layer a.icon{
+    background-color: black;
+    transform:rotateY(-180deg)  ;
+}
+
+.layer a.icon:hover  {
+    border: solid black 1px !important ;
+    background-color: white ;
+    color: black !important;  
+}
+.content footer {
+    background-color: #5B5B5B;
+}
+/*  end of team section   */
+/*  start of Contact us section   */
+.conteinerOfcontact {
+    width: 80%;
+    margin-inline: auto;
+}
+.form-control{
+    background-color: #f4f4f4;;
+}
+textarea.form-control {
+min-height: 8.125rem;
+max-height: 11.25rem;
+resize: auto;
+max-width: 100%;
+}
+.form-control:focus {
+outline: 0;
+background-color: #f4f4f4;
+box-shadow: none;
+}
+form input[ type="submit"]{
+    background-color: #212529 !important;
+    color: white;
+
+}
+form input[ type="submit"]:hover{
+    background-color: white !important;
+    color: #212529;
+}
+/*  end  of Contact us section  */
+/* start of footer */
+footer {
+    background: #1c1c1c;
+}
+@media screen and (max-width:768px) {
+    .conteinerOfcontact {
+        width:  90%;
+    }
+    
+}
